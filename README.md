@@ -32,7 +32,7 @@ This is a GSoC 2024 project implementing the extraction and containerization of 
 
 ### Containerization and deployment 
 - [Salt Event Processor Container Implementation](doc/Salt-Event-Processor-Container-Implementation.md)
-- [Salt Event Processor Image Build and Test](doc/Salt%20Event%20Processor%20Image%20Build%20and%20Test.md)
+- [Salt Event Processor Image Build and Test](doc/Salt-Event-Processor-Image-Build-and-Test.md)
 
 ### Uyuni-tools Integration (Pending)
 
