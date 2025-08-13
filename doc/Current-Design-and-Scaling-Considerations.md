@@ -150,8 +150,8 @@ sequenceDiagram
 
 The main scalability strategy of the current implementation focuses on vertical scaling, which is well-suited for Uyuni's estimated user base. Why?
 
-- Most deployments manage 100-10,000 systems (manageable load)
-- Salt event processing is typically bursty rather than sustained high-throughput
+- Vertical scaling is sufficient for the current user base, which is not expected to grow significantly in the near future
+- Salt event processing is typically bursty rather than sustained high-throughput
 - Modern hardware can handle significant event volumes with proper resource allocation
 
 ## Potential Bottlenecks with Single Instance Implementation
@@ -160,11 +160,11 @@ Though the current implementation is well-suited for Uyuni's user base, we still
 
 1. Database Bottleneck
 
-   All events flow through one `suseSaltEvent` table, using PostgreSQL's built-in lock mechanism `SELECT FOR UPDATE SKIP LOCKED` to achieve idempotency. This approach is limited by database I/O and connection capacity. Given the current user base, we can scale vertically, but this may eventually hit hardware limits.
+   All events flow through one `suseSaltEvent` table, using PostgreSQL's built-in lock mechanism `SELECT FOR UPDATE SKIP LOCKED` to achieve idempotency. This approach is limited by database I/O and connection capacity. Given the current user base, we can scale vertically, but this may eventually hit hardware limits.
 
 2. Single Point of Processing
 
-   Current event processing uses one `PGEventStream` instance to handle all events from the database. This creates a single point of failure and processing bottleneck.
+   Current event processing uses one `PGEventStream` instance to handle all events from the database. This creates a single point of failure and processing bottleneck.
 
 3. Sequential Polling Limitation
 
