@@ -133,7 +133,7 @@ Data flow: Salt Master → PostgreSQL → PGEventStream → PGEventListener → 
 
 ### **Database Event Queuing Mechanism of Uyuni**
 
-****`susesaltevent` **Table**: Database table that queues unprocessed Salt events. This table serves as a persistent event queue, schema is:
+**`susesaltevent` Table**: Database table that queues unprocessed Salt events. This table serves as a persistent event queue, schema is:
 
 - **id**: Unique event identifier
 - **minion_id**

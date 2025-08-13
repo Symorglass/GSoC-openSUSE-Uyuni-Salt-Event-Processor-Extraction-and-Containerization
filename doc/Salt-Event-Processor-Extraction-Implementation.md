@@ -14,7 +14,7 @@
 
 Salt event processor was embedded in Tomcat Web Application, which made it tightly coupled with the main Uyuni server. This architecture made it difficult to scale or manage Salt event processing independently.
 
-<img src="../images/monolithic_architecture.png" alt="Monolithic Architecture" style="max-width: 40%;">
+<img src="../images/monolithic_architecture.png" alt="Monolithic Architecture" style="max-width: 20%;">
 
 
 ### After: Microservice Architecture

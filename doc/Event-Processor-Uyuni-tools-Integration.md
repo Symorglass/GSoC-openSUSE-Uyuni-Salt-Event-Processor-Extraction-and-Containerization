@@ -588,7 +588,7 @@ The scalability of event processor is limited by its architecture design.
 - **Replica Enforcement Strategy**: EventProcessor does not have `Replicas int` field because it's enforced to exactly 1. Current Salt event processing was designed singleton, Current event processing order is guaranteed by single instance of processor.  Multiple instances processing the same event stream would cause race conditions. To implement replicas, we need to redesign the salt event processor logic
 - **Single Point bottleneck:** This processor is now the single point for all Salt event processing, if bottleneck emerges, need event partitioning strategy
 
-For more analysis, check: [Uyuni Salt Event Processing System and Uyuni-tools Integration: Design, and Scaling Considerations ](https://www.notion.so/Uyuni-Salt-Event-Processing-System-and-Uyuni-tools-Integration-Design-and-Scaling-Considerations-24e962bf912a80d38f98edb16f478a9d?pvs=21)
+For more analysis, check: [Uyuni Salt Event Processing System and Uyuni-tools Integration: Design, and Scaling Considerations ](doc/Current-Design-and-Scaling-Considerations.md)
 
 ## **Future Consideration**
 
