@@ -42,7 +42,7 @@ We need:
     sudo ./bin/mgradm install podman --help
     ```
 
-    **Expected Output**:
+    **Expected Terminal Output**:
 
     ```
     ...
@@ -66,7 +66,7 @@ We need:
 
 2. **Install uyuni server with event processor image uisng the built code**
 
-    ```bash
+   ```bash
     # Install with Event Processor
     server:~/Documents/uyuni-tools> sudo ./bin/mgradm -c mgradm.yaml install podman server.uyuni.lab \
       --eventprocessor-image registry.opensuse.org/home/cbosdonnat/branches/systemsmanagement/uyuni/master-sywen/containerfile/uyuni/server-salt-event-processor:latest \
