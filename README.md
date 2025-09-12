@@ -178,7 +178,7 @@ This project is part of the [openSUSE](https://www.opensuse.org) GSoC 2025 progr
 
 ## Acknowledgement
 
-I want to express my sincere appreciation to my mentors for their outstanding technical guidance and commitment to quality throughout this work. Their high standards and comprehensive understanding of systems architecture challenged me to create solutions of real value. Their thoughtful guidance helped me work through  technical obstacles. The openSUSE community's supportive culture eased my path to engage and navigate, creating an environment where open source contributions are approachable for newcomers.
+I want to express my sincere appreciation to my mentors @cbosdo and @rjmateus for their outstanding technical guidance and commitment to quality throughout this work. Their high standards and comprehensive understanding of systems architecture challenged me to create solutions of real value. Their thoughtful guidance helped me work through  technical obstacles. The openSUSE community's supportive culture eased my path to engage and navigate, creating an environment where open source contributions are approachable for newcomers.
 
 ## Related Links
 
