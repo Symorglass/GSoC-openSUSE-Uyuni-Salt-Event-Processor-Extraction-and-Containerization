@@ -21,6 +21,7 @@ The project went through phases from research and extraction to containerization
 - [x] **Phase 4**: Testing and optimization 
 
 ## Implementation
+- [PR#555](https://github.com/uyuni-project/uyuni-tools/pull/555)
 - [PR#10493](https://github.com/uyuni-project/uyuni/pull/10493)
 - [PR#626](https://github.com/uyuni-project/uyuni-tools/pull/626)
 
